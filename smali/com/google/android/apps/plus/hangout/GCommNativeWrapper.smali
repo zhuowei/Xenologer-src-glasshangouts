@@ -1272,6 +1272,11 @@
 
     .prologue
     .line 429
+
+    const-string v0, "hangouts_media"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
     const-string v0, "gcomm_jni"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
@@ -1305,6 +1310,11 @@
 
     .prologue
     .line 420
+
+    const-string v0, "hangouts_media"
+
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
     const-string v0, "gcomm_jni_svc"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
