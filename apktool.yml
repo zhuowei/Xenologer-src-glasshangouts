@@ -1,0 +1,12 @@
+version: 1.5.2
+apkFileName: GlassHangouts.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '15'
+packageInfo:
+  cur_package: com.google.glass.hangouts
+  orig_package: com.google.glass.hangouts
+compressionType: false

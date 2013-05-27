@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/status_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.glass.widget.MosaicView android:id="@id/status_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/status_shade" android:background="@color/background_shade" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/overlay_large" />
+    <com.google.glass.widget.SliderView android:id="@id/status_slider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.google.glass.widget.TypophileTextView android:id="@id/status_message_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:layout_above="@id/status_slider" android:layout_centerHorizontal="true" style="@style/SmallOverlayText" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:layout_above="@id/status_message_footer">
+        <ImageView android:layout_gravity="center" android:id="@id/status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.google.glass.widget.TypophileTextView android:id="@id/status_message_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" style="@style/LargeOverlayText" />
+    </LinearLayout>
+</RelativeLayout>

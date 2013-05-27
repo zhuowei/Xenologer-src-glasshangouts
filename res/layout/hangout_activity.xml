@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.glass.horizontalscroll.HorizontalScrollRelativeLayout android:id="@id/main_hangout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:glass="http://schemas.android.com/apk/res/com.google.glass.hangouts">
+    <SurfaceView android:id="@id/self_video" android:visibility="gone" android:layout_width="@dimen/self_video_size" android:layout_height="@dimen/self_video_size" />
+    <android.opengl.GLSurfaceView android:id="@id/incoming_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/participant_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.glass.widget.TipsView android:gravity="center" android:id="@id/warning" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" style="@style/TipsViewText" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="5.0px" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/active_participant" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_done_medium" />
+        <ImageView android:id="@id/participant_mic_muted" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mic_off_medium" />
+        <com.google.glass.widget.TypophileTextView android:id="@id/participant_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediumOverlayText" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/hangout_metadata_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginRight="30.0px" android:layout_marginBottom="30.0px" android:layout_alignParentBottom="true">
+        <com.google.glass.widget.TypophileTextView android:gravity="center" android:id="@id/participant_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_group_small" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/SmallOverlayText" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/self_video_muted" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_off_medium" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/self_mic_muted" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mic_off_medium" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/chat_container" android:background="@drawable/overlay_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginRight="40.0px" android:layout_marginBottom="40.0px" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:alpha="0.0">
+            <ImageView android:id="@id/chat_photo_top" android:layout_width="70.0px" android:layout_height="70.0px" android:layout_marginRight="15.0px" android:layout_alignParentTop="true" />
+            <com.google.glass.widget.TypophileTextView android:id="@id/chat_text_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" style="@style/ChatOverlayText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0">
+            <ImageView android:id="@id/chat_photo_bottom" android:layout_width="70.0px" android:layout_height="70.0px" android:layout_marginRight="15.0px" android:layout_alignParentTop="true" />
+            <com.google.glass.widget.TypophileTextView android:id="@id/chat_text_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" android:layout_alignParentTop="true" style="@style/ChatOverlayText" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.glass.horizontalscroll.HorizontalScrollRelativeLayout>

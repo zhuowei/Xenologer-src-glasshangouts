@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:glass="http://schemas.android.com/apk/res/com.google.glass.hangouts">
+    <item glass:id="@id/menu_participants" glass:name="@string/menu_participants" glass:image="@drawable/ic_hangout_participants_medium" />
+    <item glass:id="@id/menu_exit" glass:name="@string/menu_leave" glass:image="@drawable/ic_hangout_medium" />
+    <item glass:id="@id/menu_invite" glass:name="@string/menu_invite" glass:image="@drawable/ic_hangout_invite_medium" />
+    <state-item glass:id="@id/menu_audio">
+        <state glass:id="@id/menu_unmuted_audio" glass:name="@string/menu_unmuted_audio" glass:image="@drawable/ic_mic_medium" />
+        <state glass:id="@id/menu_muted_audio" glass:name="@string/menu_muted_audio" glass:image="@drawable/ic_mic_off_medium" />
+    </state-item>
+    <state-item glass:id="@id/menu_video">
+        <state glass:id="@id/menu_unmuted_video" glass:name="@string/menu_unmuted_video" glass:image="@drawable/ic_video_medium" />
+        <state glass:id="@id/menu_muted_video" glass:name="@string/menu_muted_video" glass:image="@drawable/ic_video_off_medium" />
+    </state-item>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:glass="http://schemas.android.com/apk/res/com.google.glass.hangouts">
+    <state-item glass:id="@id/menu_remote_audio">
+        <state glass:id="@id/menu_remote_mute" glass:name="@string/menu_remote_mute" glass:image="@drawable/ic_mic_off_medium" />
+        <state glass:id="@id/menu_remote_muted" glass:name="@string/menu_remote_muted" glass:image="@drawable/ic_mic_off_medium" />
+    </state-item>
+    <item glass:id="@id/menu_self_mute" glass:name="@string/menu_unmuted_audio" glass:image="@drawable/ic_mic_off_medium" />
+</menu>
